@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a class="header__logo">
@@ -27,8 +28,8 @@
                 </div>   
             </header>
             <div class="promo__wrapper">
-                <h1 class="promo__header">Подбор пульсометра</h1>
-                <h2 class="promo__subheader">с учётом Вашего уровня подготовки</h2>
+                <h1 class="promo__header animate__animated animate__bounceIn wow" data-wow-duration="1s" data-wow-delay="0.5s">Подбор пульсометра</h1>
+                <h2 class="promo__subheader animate__animated animate__bounceIn wow" data-wow-duration="1s" data-wow-delay="0.5s">с учётом Вашего уровня подготовки</h2>
 
                 <div class="promo__icons">
                     <div class="promo__icon">
@@ -66,7 +67,7 @@
                     <div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantages__item">
-                    <img src="img/icons/heart.png" alt="heart" class="advantages__icon">
+                    <img src="img/icons/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
                     <div class="advantages__descr">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
@@ -82,15 +83,15 @@
     </section>
     <section class="consultation">
         <div class="container">
-            <h2 class="title title_left">
+            <h2 class="title title_left animate__animated animate__bounceInLeft wow" data-wow-duration="1s" data-wow-delay="0.5s">
                 Получите бесплатную консультацию<br>
                 по подбору пульсометра 
             </h2>
-            <div class="consultation__descr">
+            <div class="consultation__descr animate__animated animate__bounceInLeft wow" data-wow-duration="1s" data-wow-delay="0.5s">
                 Просто заполните форму заявки<br>
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form id="consultation-form" class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form animate__animated animate__bounceInRight wow" data-wow-duration="0.5s" data-wow-delay="1s" action="#">
                 <input name="name" placeholder="Ваше имя" type="text">
                 <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш E-mail" type="email">
@@ -375,7 +376,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="1s">
                 <img src="img/photo_1.png" alt="photo" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Ирина Иванченко </div>
@@ -387,7 +388,7 @@
                     Спасибо, RunSmart! </div>
                 </div>
             </div>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="1s">
                 <img src="img/photo_2.png" alt="photo" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Иван Сёмочкин</div>
@@ -398,7 +399,7 @@
                      С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
                 </div>
             </div>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="1s">
                 <img src="img/photo_3.png" alt="photo" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Юлия Дашкина</div>
@@ -455,12 +456,17 @@
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
+    <a href="#up" class="pageup">
+        <img src="img/icons/top_arrow_icon.svg" alt="arrow-up">
+    </a>
+
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
